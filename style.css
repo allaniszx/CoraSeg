@@ -1,0 +1,624 @@
+
+
+/* RESET */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ===========================
+   BANNER TOPO
+=========================== */
+.top-banner {
+    background-color: #ffc947;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: #5a2900;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===========================
+   HEADER E MENU
+=========================== */
+.header {
+    background-color: #DE3771;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite quebra em telas pequenas */
+    position: relative; /* Para posicionar o menu suspenso */
+    color: white;
+    z-index: 10;
+}
+
+
+.logo {
+    height: 48px;
+    display: flex;
+    justify-content: baseline;
+    padding: 0 0 0 70px;
+}
+
+.nav-menu a {
+    color: #FF8337;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    gap: 20px;
+    padding: 30px;
+}
+.menu-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #ff8c42; /* cor laranja igual ao seu tema */
+  font-size: 22px;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.hero-section {
+  height: 64vh;
+  text-align: left;
+  padding: 5px 10%;
+  background: linear-gradient(70deg,#ff6e7fb2,#ff8437b2, #fcc153b2);
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  }
+
+
+.hero-title {
+    color: #e84a5f;
+    font-size: 32px;
+    margin-bottom: 12px;
+    margin-left: 30vh;
+
+}
+
+.hero-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin-left: 30vh;
+    margin-right: auto;
+    color: #FF8337;
+    display: flex;
+    text-align: left;
+}
+
+.hero-button {
+    background: #ffc947;
+    color: #ff6e7f;
+    border:#DE3771;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 30vh;
+}
+
+.hero-button:hover {
+    background: #e84a5f;
+}
+
+.hero-image {
+    margin-top: 14px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+/* ===========================
+   SEÇÃO DE SEGUROS
+=========================== */
+.seguros-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 20px;
+    background: #fff6f6;
+}
+
+.seguro-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 20px;
+    margin-top: -120px;
+    width: 280px;
+    text-align: center;
+}
+
+.seguro-title {
+    font-size: 20px;
+    color: #e84a5f;
+    margin-bottom: 10px;
+}
+
+.seguro-description {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.seguro-preco {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.seguro-button {
+    background: #ff6e7f;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.seguro-button:hover {
+    background: #e84a5f;
+}
+
+.seguro-card{
+
+  font-size: 28px;
+  color: #FF8337;
+  margin-bottom: 10px;
+  display: block;
+
+}
+
+/* ===========================
+   SEÇÃO DE BENEFÍCIOS
+=========================== */
+
+.beneficios-section {
+  text-align: center;
+  padding: 10px;
+  background: 
+    radial-gradient(circle at 7% 50%, #DE37713D 400px, transparent 100px),
+    radial-gradient(circle at 35% 50%, #FF83373D 400px, transparent 90px),
+    radial-gradient(circle at 62% 50%, #FCC2533D 400px, transparent 200px),
+    radial-gradient(circle at 90% 50%, #FFE9B13D 400px, transparent 70px),
+    #fff;
+    height: 90vh;
+    padding: 180px;
+}
+
+.beneficios-container {
+  display: flex;
+  justify-content: space-around; /* ou space-between */
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  text-align: center;
+  margin-right: 90px;
+  margin-left: 90px;
+  align-items: center;
+
+}
+
+.beneficios-title {
+    color: #e84a5f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.beneficios-description {
+    font-size: 16px;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+}
+
+.beneficio-card {
+    display: inline-block;
+    max-width: 310px;
+    margin: 12px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.beneficio-image {
+    width: 220px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.beneficio-subtitle {
+    color: #e84a5f;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.beneficio-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===========================
+   SEÇÃO ABRA SUA CONTA
+=========================== */
+.abra-conta-section {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #ffffff; /* Cor base para o fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 80vh;
+}
+
+.fundo-curvo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 0;
+    pointer-events: none;
+    margin-top: 39vh;
+}
+
+.abra-conta-conteudo {
+  max-width: 1200px;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    align-items: center;
+    margin-left: 30vh;
+}
+
+.abra-conta-title {
+    font-size: 2em;
+    color: #b2003c;
+    margin-bottom: 15px;
+    margin-left: 30vh;
+
+}
+
+.abra-conta-description {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 30vh;
+}
+
+.abra-conta-frase {
+    font-size: 1.1em;
+    color: #ff7a00;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 30vh;
+}
+
+.abra-conta-button {
+    background-color: #c4005a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 30vh;
+}
+
+.abra-conta-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    max-width: 800px;
+    z-index: 1;
+    margin-right: 120px;
+}
+/* ===========================
+   SEÇÃO FAQ
+=========================== */
+.faq-section {
+    padding: 80px 20px;
+    background: #ffe9e9;
+    height: 60vh;
+}
+
+.faq-title {
+    text-align: center;
+    color: #e84a5f;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 10px auto;
+    background: #fff;
+    border-radius: 8px;
+    border-color: #ff6e7fb2;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 14px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #f9f9f9;
+}
+
+.faq-answer {
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.footer {
+  background: linear-gradient(135deg, #ff8a8a, #ffc947);
+  color: #fff;
+  padding: 40px 20px 20px 20px;
+  font-family: "Outfit", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  max-width: 160px;
+}
+
+.footer-links,
+.footer-contato,
+.footer-social {
+  min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contato h4,
+.footer-social h4 {
+  margin-bottom: 12px;
+  color: #5a2900;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #5a2900;
+}
+
+.footer-contato p {
+  margin: 4px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-social .social-icons a {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icons a:hover {
+  color: #5a2900;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+@media (max-width: 768px) {
+    .seguros-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beneficio-card {
+        max-width: 90%;
+    }
+}
+
+/* ===========================
+   RESPONSIVIDADE - TABLETS
+=========================== */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-title,
+  .hero-description,
+  .hero-button,
+  .abra-conta-title,
+  .abra-conta-description,
+  .abra-conta-frase,
+  .abra-conta-button {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
+
+  .beneficios-container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .beneficio-card {
+    max-width: 90%;
+  }
+
+  .nav-menu a {
+    padding: 15px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+}
+
+/* ===========================
+   RESPONSIVIDADE - CELULARES
+=========================== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .seguro-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .beneficios-section {
+    padding: 60px 20px;
+    height: auto;
+  }
+
+  .abra-conta-section {
+    padding: 40px 20px;
+  }
+
+  .abra-conta-image {
+    max-width: 90%;
+  }
+
+  .faq-question, .faq-answer {
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   EXTRA - TELAS MUITO PEQUENAS
+=========================== */
+@media (max-width: 480px) {
+  .top-banner {
+    font-size: 10px;
+    height: auto;
+    padding: 6px;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-button,
+  .abra-conta-button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .beneficio-image {
+    width: 160px;
+  }
+
+  .abra-conta-title {
+    font-size: 22px;
+  }
+
+  .abra-conta-description,
+  .abra-conta-frase {
+    font-size: 14px;
+  }
+
+  .faq-title {
+    font-size: 20px;
+  }
+}
+
+
+
